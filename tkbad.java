@@ -46,7 +46,7 @@ public class tkbad extends javax.swing.JFrame {
             java.sql.ResultSet res = stm.executeQuery(sql);
             
             while(res.next()){
-                model.addRow(new Object[]{no++,res.getString(1),res.getString(2),res.getString(3),res.getString(4),res.getString(5),res.getString(6)}); 
+                 model.addRow(new Object[]{no++,res.getString(1),res.getString(2),res.getString(3),res.getString(4),res.getString(5),res.getString(6),res.getString(7),res.getString(8),res.getString(9)}); 
             }
             tabelStaff.setModel(model);            
         }catch (SQLException e){
